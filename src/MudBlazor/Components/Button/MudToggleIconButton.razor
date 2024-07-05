@@ -1,0 +1,17 @@
+﻿@namespace MudBlazor
+@inherits MudComponentBase
+
+<MudIconButton Icon="@(Toggled ? ToggledIcon : Icon)"
+               Size="(Toggled ? ToggledSize : Size)"
+               Color="(Toggled ? ToggledColor : Color)"
+               Variant="Variant"
+               Disabled="Disabled"
+               Edge="Edge"
+               Ripple="@Ripple"
+               OnClick="Toggle"
+               Class="@Class"
+               Style="@Style"
+               DropShadow="@DropShadow"
+               ClickPropagation="ClickPropagation"
+               aria-pressed="@((Toggled ? "true" : "false"))"
+               @attributes="UserAttributes" />
